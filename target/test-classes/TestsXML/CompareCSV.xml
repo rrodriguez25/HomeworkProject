@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test Compare Column Header Count">
+    <classes>
+      	<class name="Tests.CompareColumnHeaderCount"/>
+     </classes> 
+  </test>
+  <test name="Test Compare Column Header Name">
+     <classes>
+      	<class name="Tests.CompareColumnHeaderName"/>
+     </classes> 
+  </test>
+    <test name="Test Compare File Size">
+     <classes>
+      	<class name="Tests.CompareFileSize"/>
+     </classes> 
+  </test>
+  <test name="Test Compare Row Count">
+     <classes>
+      	<class name="Tests.CompareRowCount"/>
+     </classes> 
+  </test>
+  <test name="Test Compare Row Data">
+     <classes>
+     	<class name="Tests.CompareRowData"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

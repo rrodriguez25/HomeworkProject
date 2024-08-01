@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test Compare Column Header Name(failed)">
+    <classes>
+      <class name="Tests.CompareColumnHeaderName">
+        <methods>
+          <include name="checkStatus"/>
+          <include name="generateExtentReports"/>
+          <include name="CompareColumnsHeaderNameTest"/>
+          <include name="initialiseExtentReports"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Tests.CompareColumnHeaderName -->
+    </classes>
+  </test> <!-- Test Compare Column Header Name(failed) -->
+  <test thread-count="5" name="Test Compare File Size(failed)">
+    <classes>
+      <class name="Tests.CompareFileSize">
+        <methods>
+          <include name="checkStatus"/>
+          <include name="generateExtentReports"/>
+          <include name="initialiseExtentReports"/>
+          <include name="CompareFileSizeTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Tests.CompareFileSize -->
+    </classes>
+  </test> <!-- Test Compare File Size(failed) -->
+  <test thread-count="5" name="Test Compare Row Count(failed)">
+    <classes>
+      <class name="Tests.CompareRowCount">
+        <methods>
+          <include name="checkStatus"/>
+          <include name="generateExtentReports"/>
+          <include name="initialiseExtentReports"/>
+          <include name="CompareRowCountTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Tests.CompareRowCount -->
+    </classes>
+  </test> <!-- Test Compare Row Count(failed) -->
+  <test thread-count="5" name="Test Compare Row Data(failed)">
+    <classes>
+      <class name="Tests.CompareRowData">
+        <methods>
+          <include name="checkStatus"/>
+          <include name="generateExtentReports"/>
+          <include name="CompareColumnsHeaderName"/>
+          <include name="initialiseExtentReports"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Tests.CompareRowData -->
+    </classes>
+  </test> <!-- Test Compare Row Data(failed) -->
+</suite> <!-- Failed suite [Suite] -->
