@@ -21,16 +21,16 @@ public class CompareFileSize extends BaseTest {
 		//prints file size in bytes  
 		String csv1Filesize = sizeInBytes(csv1File);
 		System.out.println(csv1Filesize);  
-		extentTest.info(config.csvFile1+" file size: "+csv1Filesize+" bytes");
+		extentTest.info(config.csvFile1+" file size: "+csv1Filesize);
 		
 		//prints file size in bytes  
 		String csv2Filesize = sizeInBytes(csv2File);
 		System.out.println(csv2Filesize);
-		extentTest.info(config.csvFile2+" file size: "+csv2Filesize+" bytes");
+		extentTest.info(config.csvFile2+" file size: "+csv2Filesize);
 		
 		//Assert that csv file sizes are the same
 		Assert.assertTrue(csv1Filesize.equals(csv2Filesize), "TEST FAILED: File Sizes does not match. "
-				+ config.csvFile1+" size in bytes: "+csv1Filesize+". "+config.csvFile2+" size in bytes: "+csv2Filesize+".");
+				+ config.csvFile1+" size: "+csv1Filesize+". "+config.csvFile2+" size: "+csv2Filesize+".");
 		extentTest.pass("Files size is the same.");
 		
 	}

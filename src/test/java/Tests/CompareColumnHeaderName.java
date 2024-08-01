@@ -12,8 +12,6 @@ import com.opencsv.exceptions.CsvValidationException;
 import TestNG.BaseTest;
 
 public class CompareColumnHeaderName extends BaseTest {
-
-	//public ConfigProperties config = new ConfigProperties();
 	
 	String csv1location = System.getProperty("user.dir") + "//csvfiles//"+config.csvFile1;
 	String csv2location = System.getProperty("user.dir") + "//csvfiles//"+config.csvFile2;
@@ -74,6 +72,6 @@ public class CompareColumnHeaderName extends BaseTest {
 		
 		Assert.assertTrue(testpass, "Found "+notMatchingCount+" ColumnHeader(s) name(s) not matching");
 		extentTest.pass("All Column Header Names are matching");
-
+		
 	}
 }

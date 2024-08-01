@@ -23,7 +23,6 @@ public class CompareRowCount extends BaseTest {
 	@Test
 	public void CompareRowCountTest() throws CsvValidationException, IOException {
 		
-		try {
 			//Get number of rows for CSV-1
 			int file1_numOfRows = 0;
 			csv1Reader = new CSVReader(new FileReader(csv1location));
@@ -45,16 +44,6 @@ public class CompareRowCount extends BaseTest {
 			//Compare Number of Rows for both CSVs
 			Assert.assertTrue(file1_numOfRows==file2_numOfRows, "TEST FAILED: Number of Row does not match. "
 					+ config.csvFile1+" total rows count: "+file1_numOfRows+". "+config.csvFile2+" total rows count: "+file2_numOfRows+".");
-		}
-		catch (Exception e) {
-			
-		}
-		finally {
-			if(csv1Reader != null)
-				csv1Reader.close();
-			if(csv2Reader != null)
-				csv2Reader.close();
-		}
 		
 	}
 }

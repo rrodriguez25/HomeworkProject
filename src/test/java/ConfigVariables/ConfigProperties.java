@@ -8,8 +8,8 @@ import java.util.Properties;
 
 public class ConfigProperties {
 
-	public static Properties prop;
-	private static String configPath = "//src//main//java//Configuration//configsetting.properties";
+	public Properties prop;
+	private String configPath = "//src//test//java//Configuration//configsetting.properties";
 	
 	public String csvFile1 = "";
 	public String csvFile2 = "";
